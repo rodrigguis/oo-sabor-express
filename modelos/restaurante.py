@@ -1,9 +1,9 @@
-'''Modulo modelos'''
+"""Modulo modelos"""
 
 from modelos.avaliacao import Avaliacao
 
 class Restaurante:
-    '''Class representation Restaurant'''
+    """Class representation Restaurant"""
 
     restaurantes = []
 
@@ -19,7 +19,7 @@ class Restaurante:
 
     @classmethod
     def listar(cls):
-        '''Method for list restaurants'''
+        """Method for list restaurants"""
         cabecalho_nome = 'Nome Restaurante'.ljust(25)
         cabecalho_categoria = 'Categoria'.ljust(10)
         cabecalho_avaliacao = 'Avaliacao'.ljust(25)
@@ -30,22 +30,22 @@ class Restaurante:
 
     @property
     def ativo(self):
-        '''Method for update status'''
+        """Method for update status"""
         return '☑' if self._ativo else '☒'
 
     def alternar_estado(self):
-        '''Method for alter status'''
+        """Method for alter status"""
         self._ativo = not self._ativo
 
     def receber_avaliacao(self, cliente, nota):
-        '''Method for reception avaliation'''
+        """Method for reception avaliation"""
         if 0 < nota <=5:
             avaliacao = Avaliacao(cliente, nota)
             self._avaliacao.append(avaliacao)
 
     @property
     def media_avaliacoes(self):
-        '''Method for average avaliations'''
+        """Method for average avaliations"""
         if not self._avaliacao:
             return '-'
 
