@@ -27,8 +27,7 @@ class Restaurante:
 
         print(f'''{cabecalho_nome} | {cabecalho_categoria} | {cabecalho_avaliacao} | Status''')
         for restaurante in cls.restaurantes:
-            print(f'''{restaurante.nome.ljust(20)} | {restaurante.categoria.upper().ljust(10)} | 
-{str(restaurante.media_avaliacoes).ljust(25)} | {restaurante.ativo}''')
+            print(f'''{restaurante.nome.ljust(10)} | {restaurante.categoria.upper().ljust(5)} | {str(restaurante.media_avaliacoes).ljust(5)} | {restaurante.ativo}''')
 
     @property
     def ativo(self):
