@@ -5,7 +5,7 @@ class Restaurante:
 
     def __init__(self, nome, categoria):
         self._nome = nome.title()
-        self._categoria = categoria.upper()
+        self._categoria = categoria
         self._ativo = False
         self._avaliacao = []
         Restaurante.restaurantes.append(self)
