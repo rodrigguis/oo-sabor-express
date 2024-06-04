@@ -1,5 +1,6 @@
 """ Modulo modelos """
 
+
 class Musica:
     """Class represent Music"""
 
@@ -15,4 +16,3 @@ class Musica:
         """Method show nota"""
         musica1 = Musica(nome='Under Pressure', artista='Queen', duracao=248)
         print(f'Dados: {musica1.nome}, artista: {musica1.artista} duracao: {musica1.duracao}')
-
