@@ -1,4 +1,8 @@
+''' Modulo modelos '''
+
 class Musica:
+    '''Class represent Music'''
+
     def __init__(self, nome='', artista='', duracao=0):
         self.nome = nome
         self.artista = artista

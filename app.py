@@ -1,3 +1,5 @@
+''' Modulos modelos '''
+
 from modelos.restaurante import Restaurante
 
 restaurante_praca = Restaurante('praca', 'Gourmet')
