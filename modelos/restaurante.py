@@ -26,7 +26,7 @@ class Restaurante:
 
         print(f'{cabecalho_nome} | {cabecalho_categoria} | {cabecalho_avaliacao} | Status')
         for restaurante in cls.restaurantes:
-            print(f'{restaurante.nome.ljust(20)} | {restaurante.categoria.ljust(10)} | {str(restaurante.media_avaliacoes).ljust(25)} | {restaurante.ativo}')
+            print(f'{restaurante.nome.ljust(20)} | {restaurante.categoria.upper().ljust(10)} | {str(restaurante.media_avaliacoes).ljust(25)} | {restaurante.ativo}')
 
     @property
     def ativo(self):
@@ -39,7 +39,7 @@ class Restaurante:
 
     def receber_avaliacao(self, cliente, nota):
         '''Method for reception avaliation'''
-        if 0 < nota <=5: 
+        if 0 < nota <=5:
             avaliacao = Avaliacao(cliente, nota)
             self._avaliacao.append(avaliacao)
 
