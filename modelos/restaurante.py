@@ -12,7 +12,7 @@ class Restaurante:
         self._nome = nome.title()
         self._categoria = categoria
         self._ativo = False
-        self._avaliacao = []
+        self._avaliacoes = []
         Restaurante.restaurantes.append(self)
 
     def __str__(self) -> str:
@@ -44,15 +44,15 @@ class Restaurante:
         """Method for reception avaliation"""
         if 0 < nota <= 5:
             avaliacao = Avaliacao(cliente, nota)
-            self._avaliacao.append(avaliacao)
+            self._avaliacoes.append(avaliacao)
 
     @property
     def media_avaliacoes(self):
         """Method for average avaliations"""
-        if not self._avaliacao:
+        if not self._avaliacoes:
             return '-'
 
-        soma_das_notas = sum(avaliacao.nota for avaliacao in self._avaliacao)
-        quantidade_notas = len(self._avaliacao)
+        soma_das_notas = sum(avaliacao.nota for avaliacao in self._avaliacoes)
+        quantidade_notas = len(self._avaliacoes)
         media = round(soma_das_notas / quantidade_notas, 1)
         return media
