@@ -25,8 +25,7 @@ class Restaurante:
         cabecalho_categoria = 'Categoria'.ljust(10)
         cabecalho_avaliacao = 'Avaliacao'.ljust(25)
 
-        print(f'''{cabecalho_nome} | {cabecalho_categoria} | 
-            {cabecalho_avaliacao} | Status''')
+        print(f'''{cabecalho_nome} | {cabecalho_categoria} | {cabecalho_avaliacao} | Status''')
         for restaurante in cls.restaurantes:
             print(f'''{restaurante.nome.ljust(20)} | {restaurante.categoria.upper().ljust(10)} | {str(restaurante.media_avaliacoes).ljust(25)} | {restaurante.ativo}''')
 
