@@ -1,7 +1,7 @@
 
 # OO - Sabor express
 
-Projeto com o intuito de utilizar paradigma de Orientacao a Objetos em Pyton. 
+Projeto com o intuito de utilizar paradigma de Orientacao a Objetos em Python. 
 
 
 

@@ -10,5 +10,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# Parei na aula 3, falta aula 4 e 5
