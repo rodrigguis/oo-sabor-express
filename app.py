@@ -6,6 +6,9 @@ restaurante_praca.receber_avaliacao('Tan', 0)
 restaurante_praca.receber_avaliacao('Rob', 0)
 
 def main():
+    '''
+    Principal class
+    '''
     Restaurante.listar()
 
 if __name__ == '__main__':

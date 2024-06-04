@@ -1,4 +1,5 @@
-class Livro: 
+class Livro:
+    '''Class Book'''
     def __init__(self, titulo='', autor='', paginas=0):
         self._titulo = titulo
         self._autor = autor
@@ -6,12 +7,16 @@ class Livro:
 
     def __str__(self) -> str:
         return f'{self._titulo} por {self._autor} - {self._paginas} paginas'
-    
+
     @property
-    def titulo_autor(self): 
+    def titulo_autor(self):
+        '''
+        Property title autor
+        '''
         return f'{self._titulo} por {self._autor}'
-    
-    def aumentar_paginas(self, quantidade): 
+
+    def aumentar_paginas(self, quantidade):
+        '''Function increment pages'''
         self._paginas += quantidade
 
 livro_aventura = Livro('Coraline', 'Dona Mata', 350)
