@@ -17,7 +17,7 @@ Projeto com o intuito de utilizar paradigma de Orientacao a Objetos em Pyton.
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/rodrigguis/oo-sabor-express
 ```
 
 Entre no diretório do projeto
